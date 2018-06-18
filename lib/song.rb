@@ -25,6 +25,8 @@ class Song
   def create_by_name(name)
     song = Song.new
     song.name = name
+    @@all << song
+    song
   end
 
   def find_by_name
