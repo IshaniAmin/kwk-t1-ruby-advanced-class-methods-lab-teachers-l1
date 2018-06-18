@@ -42,7 +42,7 @@ class Song
     if find_by_name(name) != nil
       return find_by_name(name)
     else
-      
+      create_by_name(name)
   end
 
   def alphabetical
