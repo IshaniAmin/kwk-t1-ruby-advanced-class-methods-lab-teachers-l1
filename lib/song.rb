@@ -33,6 +33,8 @@ class Song
     @@all.each do |song|
       if song.name == name
         return song
+      end
+    end
   end
 
   def find_or_create_by_name
