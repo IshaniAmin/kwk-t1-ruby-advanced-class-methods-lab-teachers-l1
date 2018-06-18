@@ -11,7 +11,8 @@ class Song
   end
 
   def create
-
+    song = Song.new
+    @all << song
   end
 
   def new_by_name
@@ -39,7 +40,7 @@ class Song
   end
 
   def create_from_filename
-    
+
   end
 
   def destroy_all
