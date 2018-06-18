@@ -19,7 +19,11 @@ class Song
   end
 
   def create_by_name
-    
+
+  end
+
+  def find_by_name
+
   end
 
 end
