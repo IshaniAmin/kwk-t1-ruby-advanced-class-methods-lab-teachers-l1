@@ -75,11 +75,11 @@ class Song
     song.name = splitted[1]
     song.artist_name = splitted[0]
     @@all << song
-    song 
+    song
   end
 
   def self.destroy_all
-
+    @@all.clear
   end
 
 end
