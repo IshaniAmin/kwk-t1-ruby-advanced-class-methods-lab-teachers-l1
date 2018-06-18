@@ -38,7 +38,7 @@ class Song
     return nil
   end
 
-  def find_or_create_by_name(song)
+  def find_or_create_by_name(name
 
   end
 
