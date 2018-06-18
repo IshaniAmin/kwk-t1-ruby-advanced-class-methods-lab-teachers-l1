@@ -13,6 +13,7 @@ class Song
   def create
     song = Song.new
     @all << song
+    song
   end
 
   def new_by_name
