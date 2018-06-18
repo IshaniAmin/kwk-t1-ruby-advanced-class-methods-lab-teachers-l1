@@ -65,11 +65,17 @@ class Song
     song = Song.new
     song.name = splitted[1]
     song.artist_name = splitted[0]
-    song 
+    song
   end
 
   def self.create_from_filename
-
+    cut = name.chomp(".mp3")
+    splitted = cut.split(" - ")
+    song = Song.new
+    song.name = splitted[1]
+    song.artist_name = splitted[0]
+    @@all << song
+    song 
   end
 
   def self.destroy_all
