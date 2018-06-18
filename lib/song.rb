@@ -10,26 +10,26 @@ class Song
     self.class.all << self
   end
 
-  def create
+  def self.create
     song = Song.new
     @all << song
     song
   end
 
-  def new_by_name(name)
+  def self.new_by_name(name)
     song = Song.new
     song.name = name
     song
   end
 
-  def create_by_name(name)
+  def self.create_by_name(name)
     song = Song.new
     song.name = name
     @@all << song
     song
   end
 
-  def find_by_name(name)
+  def self.find_by_name(name)
     @@all.each do |song|
       if song.name == name
         return song
@@ -38,7 +38,7 @@ class Song
     return nil
   end
 
-  def find_or_create_by_name(name)
+  def self.find_or_create_by_name(name)
     if find_by_name(name) != nil
       return find_by_name(name)
     else
@@ -46,19 +46,19 @@ class Song
     end
   end
 
-  def alphabetical
+  def self.alphabetical
 
   end
 
-  def new_from_filename
+  def self.new_from_filename
 
   end
 
-  def create_from_filename
+  def self.create_from_filename
 
   end
 
-  def destroy_all
+  def self.destroy_all
 
   end
 
