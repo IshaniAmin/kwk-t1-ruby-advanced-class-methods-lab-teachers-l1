@@ -30,4 +30,8 @@ class Song
 
   end
 
+  def alphabetical
+
+  end
+
 end
